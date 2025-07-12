@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../pos-front-end"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../genie"
+		}
+	],
+	"settings": {}
+}
