@@ -1,11 +1,12 @@
 services:
   - type: web
-    name: your-app-name
+    name: pos-backend
     env: node
+    plan: free
     buildCommand: npm install && npm run build
-    startCommand: npm start
+    startCommand: node --max-old-space-size=460 --optimize-for-size dist/main.js
     envVars:
-      - key: NODE_VERSION
-        value: 16.x  # or your Node version
-      - key: NODE_OPTIONS
-        value: "--max-old-space-size=2048"
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
